@@ -19,9 +19,9 @@ To view the code press `Alt` and `F11` to open the VBA editor
 1. Enter the character you would like for an empty non-highlighted cell next to "Blank Char", cell `BG1`
 1. Enter the character you would like for an empty highlighted cell next to "Fill Char", cell `AZ1`
 1. Draw your logo/spash screen by highlighting cells and typing characters
-  * Enter a character into a cell where you would like it to appear. It is recommeneded that each cell contains only 1 or 0 characters
-  * Highlight cells the color you would like the character in that position to be
-6. Set the width and height in cells `AL1` and `AS1`
+   * Enter a character into a cell where you would like it to appear. It is recommeneded that each cell contains at most 1 character
+   * Highlight cells the color you would like the character in that position to be
+6. Set the width and height of the drawing in cells `AL1` and `AS1`
 1. Click `Generate Screen` to generate the logo with included ANSI escape characters
 1. Click `Copy to clipboard` to copy the generated logo
 
@@ -51,7 +51,7 @@ Not all terminals support this format, though many do. [Here](https://gist.githu
 
 ## Why Excel
 
-The spreadsheet in excel make for a convenient GUI for 'drawing' logos pixel by pixel, which can then be processed with VBA commands to produce the ANSI sequence.
+The spreadsheet in excel make for a convenient GUI for 'drawing' logos one character at a time, which can then be processed with VBA commands to produce the ANSI sequence.
 
 ## Known Issues
 
